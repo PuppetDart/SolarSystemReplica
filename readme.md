@@ -1,6 +1,6 @@
 ## View Live on: [Codepen](https://codepen.io/puppetdart/full/poVbvKK)
 
-This CSS project intends to bring to represent an approximated replica of the planets of our sun-system.
+This CSS project intends to depict an approximated replica of the planets of our sun-system.
 
 ### Description:
 
@@ -8,14 +8,14 @@ This CSS project intends to bring to represent an approximated replica of the pl
 The numbers & inputs used in this project, are a relative approximation of the values mentioned here: [`NASA`](https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html)   
 It must be noted that the values of mass, volume, diameter, etc. in the referenced article do not depend on any units/metrics. Rather they are ratios of different planets with respect to earth. These ratios have further been scaled down & adjusted to make them representable.
 For example  ---
-* **Orbital Period** for respective planets have been scaled down to equivalent seconds:
+* **Orbital Period** for respective planets have been scaled down to equivalent seconds:  
 -- --- -- `1 unit orbital period`  = `10 seconds`
-* **Diameter** for respective planets have been scaled down to equivalent pixels:
--- --- -- `1 unit diameter`  = `3.33px`
+* **Diameter** for respective planets have been scaled down to equivalent pixels:  
+-- --- -- `1 unit diameter`  = `3.33px`  
 (& similar scales have been used to determine, **distance from sun** & **speed of rotation.**)
 
 #### 2. Scaled-down sun:
-By default, the sun is scaled down to 2/3^rd^ its relative size for better comprehension. Yet to include even more space & planets into the visible area, one may scale down the sun to 1/6^th^ its relative size using the upper left controls.
+By default, the sun is scaled down to 2/3rds its relative size for better comprehension. Yet to include even more space & planets into the visible area, one may scale down the sun to 1/6th its relative size using the upper left controls.
 
 ### Features:
 
