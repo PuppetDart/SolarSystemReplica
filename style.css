@@ -2,9 +2,11 @@
     --distance: 0px;
     --speed: 1s;
     --spin: 360deg;
-    --pointMargin: 0px; 
+    --pointMargin: 0px;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 @keyframes planetMotion {
     0% {
         transform: rotate(360deg) translateX(var(--distance)) rotate(var(--spin));
@@ -16,9 +18,11 @@
 }
 
 @keyframes glow {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 0 0 10px rgb(255, 119, 0),
-        0 0 0 25px rgba(255, 112, 10, 0.62);
+            0 0 0 25px rgba(255, 112, 10, 0.62);
     }
 
     50% {
@@ -39,9 +43,11 @@
 }
 
 @keyframes glowMini {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 0 0 10px rgb(255, 119, 0),
-        0 0 0 25px rgba(255, 112, 10, 0.62);
+            0 0 0 25px rgba(255, 112, 10, 0.62);
     }
 
     50% {
@@ -58,19 +64,22 @@
 }
 
 @keyframes point {
-    0%, 100%{
+
+    0%,
+    100% {
         box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.889),
-                0 0 0 8px black,
-                0 0 0 10px rgba(255, 255, 255, 0.732);
+            0 0 0 8px black,
+            0 0 0 10px rgba(255, 255, 255, 0.732);
     }
-    50%{
+
+    50% {
         box-shadow: 0 0 0 9px rgba(255, 255, 255, 0.889),
-                0 0 0 12px black,
-                0 0 0 14px rgba(255, 255, 255, 0.732);
+            0 0 0 12px black,
+            0 0 0 14px rgba(255, 255, 255, 0.732);
     }
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -83,13 +92,14 @@ body {
     overflow: hidden;
 }
 
-body, .solarSystem{
+body,
+.solarSystem {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.solarSystem{
+.solarSystem {
     transition: all ease-in-out 1s;
 }
 
@@ -106,7 +116,8 @@ body, .solarSystem{
     animation-timing-function: ease-in-out;
     transition: all ease-in-out 0.2s;
 }
-.mini{
+
+.mini {
     height: 50px;
     width: 50px;
     animation-name: glowMini;
@@ -127,7 +138,8 @@ body, .solarSystem{
     width: 1.276px;
     background: white;
 }
-#mercury.motionMiniSun{
+
+#mercury.motionMiniSun {
     --distance: 62.9px;
 }
 
@@ -139,7 +151,8 @@ body, .solarSystem{
     width: 3.163px;
     background: rgb(255, 169, 108);
 }
-#venus.planet.motionMiniSun{
+
+#venus.planet.motionMiniSun {
     --distance: 74px;
 }
 
@@ -151,7 +164,8 @@ body, .solarSystem{
     width: 3.33px;
     background: rgb(103, 172, 255);
 }
-#earth.motionMiniSun{
+
+#earth.motionMiniSun {
     --distance: 83.3px;
 }
 
@@ -163,7 +177,8 @@ body, .solarSystem{
     width: 1.773px;
     background: rgb(255, 189, 168);
 }
-#mars.motionMiniSun{
+
+#mars.motionMiniSun {
     --distance: 100.6px;
 }
 
@@ -182,7 +197,8 @@ body, .solarSystem{
         0 0 0 24px black,
         0 0 0 33px rgba(213, 178, 152, 0.15);
 }
-#jupiter.motionMiniSun{
+
+#jupiter.motionMiniSun {
     --distance: 240px;
 }
 
@@ -202,7 +218,8 @@ body, .solarSystem{
         0 0 0 18px black,
         0 0 0 23.5px rgba(213, 178, 152, 0.245)
 }
-#saturn.motionMiniSun{
+
+#saturn.motionMiniSun {
     --distance: 369px;
 }
 
@@ -216,7 +233,8 @@ body, .solarSystem{
     box-shadow: 0 0 0 7px black,
         0 0 0 11px rgba(130, 130, 249, 0.225)
 }
-#uranus.motionMiniSun{
+
+#uranus.motionMiniSun {
     --distance: 689px;
 }
 
@@ -228,9 +246,10 @@ body, .solarSystem{
     width: 12.93px;
     background: rgb(56, 116, 255);
     box-shadow: 0 0 0 6px black,
-                0 0 0 12px rgba(62, 120, 255, 0.197);
+        0 0 0 12px rgba(62, 120, 255, 0.197);
 }
-#neptune.motionMiniSun{
+
+#neptune.motionMiniSun {
     --distance: 1056px;
 }
 
@@ -242,7 +261,8 @@ body, .solarSystem{
     width: 0.623px;
     background: white;
 }
-#pluto.motionMiniSun{
+
+#pluto.motionMiniSun {
     --distance: 1363px;
 }
 
@@ -265,7 +285,7 @@ body, .solarSystem{
 
 /* | | | | | | | | | |  */
 /* planet spotting menu */
-.finder{
+.finder {
     opacity: 50%;
     display: flex;
     justify-content: space-around;
@@ -280,10 +300,12 @@ body, .solarSystem{
     padding: 0px 20px;
     transition: all ease-in-out 0.5s;
 }
-.finder:hover{
+
+.finder:hover {
     opacity: 90%;
 }
-.finder span{
+
+.finder span {
     font-size: 10px;
     cursor: pointer;
     padding: 10px;
@@ -291,26 +313,28 @@ body, .solarSystem{
     font-weight: 900;
     transition: all ease-in-out .2s;
 }
-.finder span:hover{
+
+.finder span:hover {
     background: rgb(255, 161, 46);
     color: black;
 }
-.finder span.selected{
+
+.finder span.selected {
     background: white;
     color: black;
 }
 
 /* planet spotting ring effect */
-.planet.point_on::before{
+.planet.point_on::before {
     content: '';
     background-color: transparent;
     height: calc(3 * var(--pointMargin));
     width: calc(3 * var(--pointMargin));
     border-radius: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-    
+
     z-index: -1;
     animation: point 1s infinite;
     position: absolute;
@@ -318,16 +342,17 @@ body, .solarSystem{
 
 /* | | | | | | | | */
 /* controller menu */
-.control{
+.control {
     display: flex;
     gap: 15px;
     position: fixed;
-    left: 10%;
+    left: 6%;
     top: 5%;
     z-index: 2;
     transition: all ease-in-out 0.2s;
 }
-.control>div{
+
+.control>div {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -338,11 +363,12 @@ body, .solarSystem{
 
 /* | | | | | | | | | | | | | */
 /* animation play/pause bttn*/
-.playState{
+.playState {
     height: 50px;
     width: 50px;
 }
-.play{
+
+.play {
     height: 0px;
     width: 0px;
     position: relative;
@@ -353,42 +379,47 @@ body, .solarSystem{
     border-right: 0px solid transparent;
     transition: all ease-in-out 0.1s;
 }
-.pause{
+
+.pause {
     display: flex;
     position: absolute;
 }
-.pause__stick{
+
+.pause__stick {
     z-index: 1;
     height: 20px;
     width: 4px;
     background: rgba(255, 255, 255, 0.821);
     margin: 3px;
 }
-.hidden{
+
+.hidden {
     transform: scale(0);
 }
 
 /* | | | | | | | | | | | */
 /* SUN zoomIn/Out button */
-.sunState{
+.sunState {
     height: 50px;
     width: 50px;
 }
-.sunModel{
+
+.sunModel {
     height: 25px;
     width: 25px;
     border-radius: 50%;
     background-color: rgb(255, 168, 27);
     transition: all ease 0.2s;
 }
-.sunMiniState{
+
+.sunMiniState {
     height: 8px;
     width: 8px;
 }
 
 /* | | | | | | | | | | | | | | | | */
 /* solar-system zoomIn/Out button */
-.zoomState{
+.zoomState {
     box-sizing: content-box;
     display: flex;
     justify-content: center;
@@ -400,7 +431,8 @@ body, .solarSystem{
     transition: all ease 0.2s;
     border-radius: 50%;
 }
-.zoomInState{
+
+.zoomInState {
     height: 44px;
     width: 44px;
     border: 3px solid rgba(255, 255, 255, 0.535);
@@ -408,8 +440,11 @@ body, .solarSystem{
 
 /* | | | | | | | | | | | | | | | */
 /* adjustment for smaller screen */
-@media (max-width:768px){
-    .finder{
+@media (max-width:768px) {
+
+    /* | | | | | | | | | |  */
+    /* planet spotting menu */
+    .finder {
         column-gap: 10px;
         row-gap: 2px;
         opacity: 60%;
@@ -420,20 +455,86 @@ body, .solarSystem{
         padding: 10px 20px;
         background-color: rgba(255, 255, 255, 0);
     }
-    .finder span{
+
+    .finder span {
         background-color: rgba(0, 0, 0, 0.519);
         font-size: 11px;
         padding: 5px 10px;
         font-weight: 700;
     }
-    .control{
+
+    /* | | | | | | | | */
+    /* controller menu */
+    .control {
         flex-flow: column;
         gap: 10px;
+        left: 8%;
+        top: 5%;
+    }
+
+    .control>div {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.214);
+        border-radius: 50%;
+    }
+
+    /* | | | | | | | | | | | | | */
+    /* animation play/pause bttn*/
+    .playState {
+        height: 30px;
+        width: 30px;
+    }
+
+    .play {
+        left: 1.49px;
+        border-top: 7px solid transparent;
+        border-left: 12px solid rgba(255, 255, 255, 0.821);
+        border-bottom: 7px solid transparent;
+    }
+
+    .pause__stick {
+        height: 13px;
+        width: 3px;
+        margin: 2px;
+    }
+
+    /* | | | | | | | | | | | */
+    /* SUN zoomIn/Out button */
+    .sunState {
+        height: 30px;
+        width: 30px;
+    }
+
+    .sunModel {
+        height: 15px;
+        width: 15px;
+    }
+
+    .sunMiniState {
+        height: 6px;
+        width: 6px;
+    }
+
+    /* | | | | | | | | | | | | | | | | */
+    /* solar-system zoomIn/Out button */
+    .zoomState {
+        height: 17px;
+        width: 17px;
+        border: 6.5px solid rgba(255, 255, 255, 0.535);
+    }
+
+    .zoomInState {
+        height: 25px;
+        width: 25px;
+        border: 2.5px solid rgba(255, 255, 255, 0.535);
     }
 }
 
 @media (max-width:768px) and (max-height:768px) {
-    .finder{
+    .finder {
         bottom: 6%;
     }
 }
