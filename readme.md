@@ -15,12 +15,12 @@ For example  ---
 (& similar scales have been used to determine, **distance from sun** & **speed of rotation.**)
 
 #### 2. Scaled-down sun:
-By default, the sun is scaled down to 2/3rds its relative size for better comprehension. Yet to include even more space & planets into the visible area, one may scale down the sun to 1/6th its relative size using the upper left controls.
+By default, the sun is scaled down to 1/6th its relative size for better comprehension & to include even more space & planets into the visible area. One may scale up the sun to 66% its relative size using the upper left controls.
 
 ### Features:
 
 #### 1. Change solar-system size scale:
-Besides the option to change the size of the sun, one may also choose to scale down the size of the solar system to 60%, a feature also provided in the upper left controls alongside animation-play/pause controls.
+Besides the option to change the size of the sun, one may also choose to scale up the size of the solar system to 2/3rd of the actual size relative to the planets, a feature also provided in the upper left controls alongside animation-play/pause controls.
 
 #### 2. Play/Pause animation:
 One may choose to pause the animation and freeze the planets at their current position & also continue from the same when played.

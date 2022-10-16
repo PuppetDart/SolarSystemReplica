@@ -3,6 +3,7 @@
     --speed: 1s;
     --spin: 360deg;
     --pointMargin: 0px;
+    --bgSize: 2000px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
@@ -85,6 +86,22 @@
 
 body {
     background: black;
+    background-image: radial-gradient(
+            rgb(35, 35, 35) 0% 4%,
+            rgb(26, 26, 26) 4% 5%,
+            rgb(21, 21, 21) 5% 6%,
+            rgb(17, 17, 17) 6% 7%,
+            rgb(15, 15, 15) 7% 8%,
+            rgb(11, 11, 11) 8% 9.5%,
+            rgb(8, 8, 8) 9.5% 11%,
+            rgb(6, 6, 6) 11% 13.5%,
+            rgb(4, 4, 4) 13.5% 16%,
+            rgb(3, 3, 3) 16% 20%,
+            rgb(2, 2, 2) 20% 25%,
+            black);
+    background-size: var(--bgSize) var(--bgSize);
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     font-family: 'Lexend Deca', sans-serif;
     height: 100vh;
