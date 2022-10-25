@@ -2,6 +2,11 @@
 
 This CSS project intends to depict an approximated replica of the planets of our sun-system.
 
+## Preview Shots:
+
+<img src="https://github.com/PuppetDart/SolarSystemReplica/blob/main/previewShots/zoomedIn.png">
+<img src="https://github.com/PuppetDart/SolarSystemReplica/blob/main/previewShots/responsive.png">
+
 ### Description:
 
 #### 1. Scaled-down metrics:
